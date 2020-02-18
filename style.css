@@ -1,34 +1,37 @@
-:root {
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+@font-face {
+  font-family: HPfont;
+  src: url(font/HARRYP__.TTF);
 }
 
-[data-theme="Gryffindor"]{
+[data-theme="gryffindor"]{
   --bck: rgba(127, 9, 9, 0.7);
   --border: #ffc500;
 }
 
-[data-theme="Hufflepuff"]{
+[data-theme="hufflepuff"]{
   --bck: rgba(238, 225, 23, 0.7);
   --border: #000000;
 }
 
-[data-theme="Ravenclaw"]{
+[data-theme="ravenclaw"]{
   --bck: rgba(0, 10, 144, 0.7);
   --border: #946b2d;
 }
 
-[data-theme="Slytherin"]{
+[data-theme="slytherin"]{
   --bck: rgba(13, 98, 23, 0.7);
   --border: #aaaaaa;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-main > h3 {
-  padding-left: 10px;
-  cursor: pointer;
+.left-side > h4, h2{
+  text-transform: capitalize;
 }
 
 /* ------------------------------------ MODAL ------------------------------------ */
@@ -138,4 +141,26 @@ section {
   flex-direction: column;
   margin: 3rem;
   width: 50%;
+}
+
+.studentCard{
+  width: 20rem;
+  height: 5rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: HPfont;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  opacity: 0.9;
+  border: 1px solid black;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

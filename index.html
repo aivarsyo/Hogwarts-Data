@@ -15,7 +15,9 @@
   </header>
   <main></main>
   <template>
-    <h3></h3>
+    <div class="studentCard">
+      <h3></h3>
+    </div>
   </template>
 
   <!-- MODAL -->
@@ -24,12 +26,14 @@
     <section class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        <h2>Modal Header</h2>
+        <h2 class="headerName"></h2>
       </div>
       <div class="left-side">
         <img class="crest"></img>
-        <h2></h2>
-        <h4>House - <span></span></h4>
+        <h2 class="studentFullname">Full Name - <span></span></h2>
+        <h4 class="middleName">Middle Name - <span></span></h4>
+        <h4 class="nickName">Nickname - <span></span></h4>
+        <h4 class="house">House - <span></span></h4>
       </div>
 
       <div class="right-side">
@@ -37,10 +41,10 @@
         <label id="theme-changer">
           Choose theme
           <select name="theme" id="theme">
-            <option value="Gryffindor">Gryffindor theme</option>
-            <option value="Hufflepuff">Hufflepuff theme</option>
-            <option value="Ravenclaw">Ravenclaw theme</option>
-            <option value="Slytherin">Slytherin theme</option>
+            <option value="gryffindor">Gryffindor theme</option>
+            <option value="hufflepuff">Hufflepuff theme</option>
+            <option value="ravenclaw">Ravenclaw theme</option>
+            <option value="slytherin">Slytherin theme</option>
           </select>
         </label>
       </div>
